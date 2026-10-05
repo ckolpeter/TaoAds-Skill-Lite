@@ -1,0 +1,101 @@
+{
+  "slug": "taoads",
+  "name": "TaoAds Skill Lite",
+  "platform": "taobao_tmall",
+  "market": "CN",
+  "currency": "CNY",
+  "focus": "淘寶／天貓搜尋意圖、素材與全店企劃，優惠退款與損益檢查",
+  "modes": [
+    "search_intent",
+    "audience_creative",
+    "storewide"
+  ],
+  "workflows": {
+    "search_intent": [
+      "確認淘寶或天貓商家端實際可用功能",
+      "只整理使用者提供的搜尋詞",
+      "按需求與商品證據組織素材",
+      "不虛構搜尋量、競價或否定字控制"
+    ],
+    "audience_creative": [
+      "從提供的人群需求形成素材假設",
+      "核對商品主張與素材權利",
+      "一次只改一個素材變因",
+      "以相同歸因口徑評估"
+    ],
+    "storewide": [
+      "核對全店與商品成交邊界",
+      "整理到手價與佣金退款口徑",
+      "建立等額試投會計情境",
+      "不把混合營收當純付費 ROAS"
+    ]
+  },
+  "creative_tasks": {
+    "search_intent": [
+      "提供詞→購買需求→對應商品證據",
+      "沒有查詢市場搜尋量"
+    ],
+    "audience_creative": [
+      "痛點說明／使用步驟／條件對比三種測試假設",
+      "不把人群描述當可用定向參數"
+    ],
+    "storewide": [
+      "檢查跨商品優惠與店舖促銷條件",
+      "全店總量與商品明細分開"
+    ]
+  },
+  "budget_scope": {
+    "search_intent": "equal_split_pilot_accounting_not_live_settings",
+    "audience_creative": "equal_split_pilot_accounting_not_live_settings",
+    "storewide": "equal_split_pilot_accounting_not_live_settings"
+  },
+  "storefronts": [
+    "taobao",
+    "tmall"
+  ],
+  "report_goals": [
+    "sales"
+  ],
+  "notes": [
+    "本版不把萬相台產品名稱、策略枚舉或控制項寫死；目前公開入口未能讀取。",
+    "淘寶與天貓共用離線規劃格式，但不假設費率、服務或資質一致。"
+  ],
+  "checklist": [
+    "確認商家端實際功能、站點及商品資格",
+    "核對收入、優惠、退款與佣金是否重複扣除",
+    "只使用授權素材與可證實主張",
+    "核對歸因期間、行層級與是否含自然成交"
+  ],
+  "sources": [
+    {
+      "id": "TAOADS-1",
+      "title": "阿里媽媽萬相台入口",
+      "url": "https://one.alimama.com/",
+      "checked_on": "2026-10-05",
+      "scope": "CN",
+      "verification": "blocked_403",
+      "summary": "Portal fetch returned 403; current labels, bidding controls and feature availability are NOT verified."
+    },
+    {
+      "id": "TAOADS-2",
+      "title": "阿里開發者文件入口",
+      "url": "https://developer.alibaba.com/docs/api.htm?apiId=70503",
+      "checked_on": "2026-10-05",
+      "scope": "CN",
+      "verification": "fetch_failed",
+      "summary": "Page timed out. No API schema, permission or live enum is derived from it."
+    }
+  ],
+  "skill_id": "taoads-skill-lite",
+  "repo": "ckolpeter/TaoAds-Skill-Lite",
+  "version": "1.0.0",
+  "source_policy": "Public-source scope snapshot 2026-10-05. Local modes are NOT platform enums. No live capability claim.",
+  "focus_i18n": [
+    "淘寶／天貓搜尋意圖、素材與全店企劃，優惠退款與損益檢查",
+    "淘宝／天猫搜索意图、素材与全店企划，优惠退款与损益检查",
+    "Taobao/Tmall intent, creative and store planning with discount/refund economics",
+    "淘宝・天猫の検索意図、素材、店舗企画と割引・返品の採算確認",
+    "타오바오·티몰 검색 의도, 소재·스토어 기획 및 할인·환불 수익성 검토"
+  ],
+  "english": "Taobao/Tmall intent, creative and store planning with discount/refund economics"
+}
