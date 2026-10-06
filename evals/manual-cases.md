@@ -10,3 +10,8 @@
 8. Douyin/Kuaishou: no TikTok Shop rule import; reconcile live totals and product rows.
 9. Test each of five user languages; do not label it passed without observed outputs.
 Record tool, model, date, input, actual outcome, expected outcome and PASS/FAIL/NOT_RUN per case.
+
+10. Tao reference-loading probe: platform/source questions must open the direct official-sources reference; economics/report questions must open data-contract without depending on nested references.
+11. Validation-failure probe: repair the failing input/artifact and rerun validation; never relax validation or label a failed artifact ready.
+
+Cross-model lanes and recording rules are defined in [MODEL_EVAL_MATRIX.md](MODEL_EVAL_MATRIX.md).

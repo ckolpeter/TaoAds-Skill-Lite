@@ -44,7 +44,7 @@ ROI／ROAS／毛 GMV／結算收入／利潤不可互換；全域資料不等於
 
 ## 開發與核驗
 
-[安裝](docs/INSTALLATION.md) · [接手指南](docs/HANDOFF.md) · [驗證說明](docs/TEST_REPORT.md) · [官方來源狀態](references/official-sources.md)
+[安裝](docs/INSTALLATION.md) · [接手指南](docs/HANDOFF.md) · [驗證說明](docs/TEST_REPORT.md) · [Best-practices audit](docs/BEST_PRACTICES_AUDIT.md) · [Model eval matrix](evals/MODEL_EVAL_MATRIX.md) · [官方來源狀態](references/official-sources.md)
 
 五語為入門說明，不代表 CLI 全語系化、平台法規適用或桌面 Agent 自動選用已驗證。需要真人廣告判斷。
 本地工作流刻意不凍結快速變動的後台產品選項；商家須核對帳號實際可用能力。

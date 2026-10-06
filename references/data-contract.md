@@ -4,6 +4,15 @@ This is a local planning/analysis contract, not an advertising API payload or ap
 The JSON schemas are authoritative for types/required fields; semantic checks add constraints.
 CN/CNY only. No exchange-rate conversion or site eligibility inference. Local SKUs/note aliases, never live account IDs.
 
+## Contents
+
+- [Brief](#brief)
+- [Financial scenarios](#financial-scenarios)
+- [Xhs non-commerce planning](#xhs-non-commerce-planning)
+- [Canonical report](#canonical-report)
+- [CSV](#csv)
+- [Output and safety](#output-and-safety)
+
 ## Brief
 
 Use templates/brief.json. Required: platform, market, currency, source, money_decimals, campaign, products, assets, china_context.
