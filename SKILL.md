@@ -4,7 +4,7 @@ description: Offline Taobao/Tmall advertising planning, store/product economics 
 license: Apache-2.0
 compatibility: Python 3.10+ standard library for local scripts; host model optional for separate interpretation.
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   edition: "lite"
   brand: "AI Ads Academy"
   external-reads: "false"

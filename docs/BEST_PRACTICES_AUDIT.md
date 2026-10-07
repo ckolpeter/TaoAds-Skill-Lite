@@ -11,8 +11,10 @@ Scope: TaoAds Skill Lite only. This is a repository/behavior-design audit, not A
 | Ordered checklist | PASS | SKILL.md contains the order-sensitive checklist and return-on-failure rule. |
 | Self-correction loop | PASS | Draft → validate → repair → revalidate; validator weakening is forbidden. |
 | Dependencies explicit | PASS | Python 3.10+ standard library only; no third-party runtime dependency. |
-| Cross-model evaluation | NOT_RUN | Required lanes are defined in `evals/MODEL_EVAL_MATRIX.md`; real host/model runs are still pending. |
+| Cross-model evaluation | PASS (scoped MANUAL_GOLDEN) | Haiku, Sonnet, and Opus baseline and self-correction PASS on commit `33a05d424e09f38fbabf436083548feb8e0114fa`; no live operations. |
 
 ## Important boundary
+
+The canonical output review field is `review: HUMAN_REVIEW_REQUIRED`; `review_status` is not a contract field.
 
 Blocked or failed source verification remains blocked/failed. Structural hardening must never convert an inaccessible official page into a verified platform capability. CI PASS does not imply live feature availability, attribution correctness, or performance.

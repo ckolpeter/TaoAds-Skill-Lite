@@ -1,4 +1,14 @@
-# Model evaluation matrix — NOT_RUN
+# Model evaluation matrix — MANUAL_GOLDEN observed 2026-10-07
+
+Evaluation type: **MANUAL_GOLDEN**. Evaluated commit: `33a05d424e09f38fbabf436083548feb8e0114fa`.
+
+| Model | Baseline | Self-correction |
+|---|---:|---:|
+| Claude Haiku | PASS | PASS |
+| Claude Sonnet | PASS | PASS |
+| Claude Opus | PASS | PASS |
+
+Self-correction fault: `publish_authorized` false → true; validator FAIL; repair true → false; validator PASS. The contract field is `review: HUMAN_REVIEW_REQUIRED`, not `review_status`. Evidence preserves `platform=taobao_tmall`, `market=CN`, `currency=CNY`; `demo-cup=PILOT_CANDIDATE`; `demo-hold=BLOCKED` with `blocked_by=out_of_stock`. No network or live operations were performed.
 
 CI validates deterministic code and repository structure. It does not prove model behavior.
 
